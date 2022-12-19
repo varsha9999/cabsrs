@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Berlin Sans FB Demi;}{\f1\fnil\fcharset0 @Microsoft YaHei UI Light;}{\f2\fnil @Microsoft YaHei UI Light;}}
+{\colortbl ;\red192\green80\blue77;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\fi1876\sa200\sl276\slmult1\cf1\ul\b\f0\fs32\lang9 FLIGHT TICKET BOOKING SYSTEM\cf0\ulnone\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi1876\sa200\sl276\slmult1\ul\b0\f1 Actors\line\ulnone\fs24 1\fs32 .\fs24 customers\line 2.admins\line 3.providers\line 4.finance managers\line\ul\fs32\par
+{\pntext\f1 2.\tab}Functionalities\line\ulnone\fs24 1.admin login,logout\line 2.customer register,login,logout\line 3.provider registeration,login,logout\line 4.finance management register,login,logout\line 5.airlines registeration,updation,deletion\line 6.searching,booking,payment\line\ul\fs32\par
+
+\pard\fi2160\sa200\sl276\slmult1 Requirments\line\ulnone\fs24 1.\ul customer\ulnone  can register,login and logout from the page.And a button for navigating for fotrgott password page.And do search,book,pay,delete,update for the flight tickects.username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+
+\pard\sa200\sl276\slmult1\ul\fs32\line\ulnone\fs24 2.\ul admin\ulnone  can login,logout from the system.And a button for navigating for fotrgott password page.admin can view the details and of the providers,finance managers and other managers.And can also accept or reject request from customers,providers,finance managers and other managers. Admin can update the flight details and managing the \fs32\line\fs24 scheduling of different flights. username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin admin.\par
+\fs32\line\ul\line\ulnone\fs24 3.\ul provider \ulnone can register,login,logout with the valid username and password.And a button for navigating for fotrgott password pageAnd provider can register the flight details,update and delete the details.username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\fs32\line\line\fs24 4.\ul financial manager \ulnone can register,login,logout.And a button for navigating for fotrgott password page.And can also view the details of flight booked customers.And can manage refund and discount.username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+5. \ul Search \par
+\ulnone\f2\bullet Search bar for searching flight on typing each letter it should show the flights that matches the corresponding letter and on touching them it should search for the corresponding flight.\par
+\bullet A clear icon button for clearing the search should appear only when atleast one letter is there.\par
+\bullet A search icon button that will take the text entered and search for the flights that matches the text and should give the result as a list with preview information(image, name, route, time).If there is no match it should show, "No result found".\par
+\bullet On tapping a specific result, it should navigate to a new page where the user get detailed view of flight(image, name, route, time, seat availablity, rate, offers if theres any, etc.). A booking button should be there on the bottom which will allow user to book the flight. \par
+\f1\lang16393 6\ul .Book\f2\lang9\par
+\ulnone\bullet A textfield for inputing user name as text\par
+\bullet A textfield for inputing user email id.\par
+\bullet It should show the information of flight\par
+\f1\lang16393 such \f2\lang9 as:\par
+a. Flight name\par
+b. Flight route\par
+c. Flight image\par
+d. Flight time\par
+e. Seat number\par
+f. Rate\par
+g. If there's offers then show it as well\par
+A payment button which on tapping will store the above information for temp and will navigate to payment page.\par
+\bullet A cancel button which will clear all the entered information and the allocated seat and navigate back to flight details page.\par
+\f1\lang16393 7.\ul Payment:\par
+\ulnone\f2\lang9 A text field for getting user debit/ credit card number, on entering the number it should automatically detect the card company, and if the number is wrong, it should show a error message.\par
+\bullet A text field for getting user debit/ credit card expiry as date format mm/yy, on entering the date it should automatically detect if the date is wrong or not,if it's wrong it should show a error message \f1\lang16393 .\par
+\f2\lang9\bullet A text field for getting user debit/ credit card cvc as number, on entering the date it should automatically detect if the cvc is wrong or not,if it's wrong it should show a error message \par
+A submit button which on pressed willcheck if all the informations are correct and if yes, it will make the payment and the user will get a preview of the invoice containing details like: username, user email, flight name, flight route, seat number, flight time, amount, and the user can download it as pdf or can close the invoice which will navigate the user back to the flight details page, else if the details are not correct it will show a error message like "Wrong credentials", or if there is any issue in payment it will show error message like "Payment failed try again"\par
+\f1\lang16393 8.\ul Add flight details\ulnone\f2\lang9\par
+\f1 Text field to input flight name should accept alphanumeric.\par
+\f2\bullet Text field to input flight number should alphanumeric.\bullet Text field to input flight routes shuld alphanumeric.\par
+\bullet TextField to input flight schedule in the order, Day, time, route\par
+.\bullet Text field to input flight rate as input type number.\par
+\bullet Image picker to pick image.\par
+\bullet Number of seats(number).\par
+\bullet Submit button that will validate if all the datas are entered, if any data is missing it will alert the user to enter the corresponding field.\par
+\f1\lang16393 9.\ul Update\f2\lang9\par
+\ulnone Text field to input flight name should accept alphanumeric as input, the previous flight name should be given as initial value of the textfield so that provider may know the previous flight name.\par
+\bullet Text field to input flight number should accept alphanumericas input type, the previous flight number should be given as initial value of the textfield so that provider may know the previous flight number.\par
+\bullet Listview of previous flight routes suffixed by a delete button. which on clicking will delete the corresponding flight route.\par
+\bullet Text field to input flight routes(alphanumeric).\par
+\bullet Listview of previous flight schedule with day, time and route suffixed by a delete button. which on clicking will delete the corresponding flight schedule.\par
+\bullet TextField to input flight schedule in the order, day, time, route.\par
+\bullet Text field to input flight rate(number), the previous flight rate should be given as initial value of the textfield so that provider may know the previous flight rate.\par
+\bullet Image picker to pick image, the previous flight image should be shown on side of the picker so that provider may know the previous flight image.\par
+\bullet Number of seats(number), the previous number of seats should be given as initial value of the textfield so that provider may know the previousnumber of seats.\par
+\bullet Submit button that will validate new datas that are entered and update the data, if any error occur while updating data it will alert the user to enter the corresponding field.\f1\line\fs32\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi1876\sa200\sl276\slmult1\ul Test cases \par
+
+\pard\sa200\sl276\slmult1\ulnone\fs24 1.\ul Admin\ulnone  login to the system by valid username and password otherwise it will show error message.check :\par
+username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin admin.\par
+2.\ul customer \ulnone must be register with the basic details such as first name,last name,phone number,passport id,gender,address login to the system by valid username and password otherwise it will show error message.\par
+check:\par
+username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+3.\ul provider\ulnone  must be register with the basic details such as username,password,company id, location,company name login to the system by valid username and password otherwise it will show error message.\par
+check:\par
+username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+4.\ul financial managers \ulnone must be register with the basic details such as username,password,company id, location,company name login to the system by valid username and password otherwise it will show error message.\par
+check:\par
+username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+5.\ul serch\par
+\ulnone check:\ul\par
+\ulnone\f2\bullet Search bar for searching flight on typing each letter it should show the flights that matches the corresponding letter and on touching them it should search for the corresponding flight.\par
+\bullet A clear icon button for clearing the search should appear only when atleast one letter is there.\par
+\bullet A search icon button that will take the text entered and search for the flights that matches the text and should give the result as a list with preview information(image, name, route, time).If there is no match it should show, "No result found".\par
+\bullet On tapping a specific result, it should navigate to a new page where the user get detailed view of flight(image, name, route, time, seat availablity, rate, offers if theres any, etc.). A booking button should be there on the bottom which will allow user to book the flight. \par
+\par
+\f1\lang16393 6\ul .Book\par
+\ulnone check:\ul\f2\lang9\par
+\ulnone\bullet A textfield for inputing user name as text\par
+\bullet A textfield for inputing user email id.\par
+\bullet It should show the information of flight\par
+\f1\lang16393 such \f2\lang9 as:\par
+a. Flight name\par
+b. Flight route\par
+c. Flight image\par
+d. Flight time\par
+e. Seat number\par
+f. Rate\par
+g. If there's offers then show it as well\par
+A payment button which on tapping will store the above information for temp and will navigate to payment page.\par
+\bullet A cancel button which will clear all the entered information and the allocated seat and navigate back to flight details page.\par
+\par
+\f1\lang16393 7.\ul Payment:\par
+\ulnone check:\ul\par
+\ulnone\f2\lang9 A text field for getting user debit/ credit card number, on entering the number it should automatically detect the card company, and if the number is wrong, it should show a error message.\par
+\bullet A text field for getting user debit/ credit card expiry as date format mm/yy, on entering the date it should automatically detect if the date is wrong or not,if it's wrong it should show a error message \f1\lang16393 .\par
+\f2\lang9\bullet A text field for getting user debit/ credit card cvc as number, on entering the date it should automatically detect if the cvc is wrong or not,if it's wrong it should show a error message \par
+A submit button which on pressed willcheck if all the informations are correct and if yes, it will make the payment and the user will get a preview of the invoice containing details like: username, user email, flight name, flight route, seat number, flight time, amount, and the user can download it as pdf or can close the invoice which will navigate the user back to the flight details page, else if the details are not correct it will show a error message like "Wrong credentials", or if there is any issue in payment it will show error message like "Payment failed try again"\par
+\f1\lang16393 8.\ul Add flight details\par
+\ulnone check:\f2\lang9\par
+\f1 Text field to input flight name should accept alphanumeric.\par
+\f2\bullet Text field to input flight number should alphanumeric.\bullet Text field to input flight routes shuld alphanumeric.\par
+\bullet TextField to input flight schedule in the order, Day, time, route\par
+.\bullet Text field to input flight rate as input type number.\par
+\bullet Image picker to pick image.\par
+\bullet Number of seats(number).\par
+\bullet Submit button that will validate if all the datas are entered, if any data is missing it will alert the user to enter the corresponding field.\f1\lang16393 x\par
+\f2\lang9\par
+\f1\lang16393 9.\ul Update\par
+\ulnone check:\ul\f2\lang9\par
+\ulnone Text field to input flight name should accept alphanumeric as input, the previous flight name should be given as initial value of the textfield so that provider may know the previous flight name.\par
+\bullet Text field to input flight number should accept alphanumericas input type, the previous flight number should be given as initial value of the textfield so that provider may know the previous flight number.\par
+\bullet Listview of previous flight routes suffixed by a delete button. which on clicking will delete the corresponding flight route.\par
+\bullet Text field to input flight routes(alphanumeric).\par
+\bullet Listview of previous flight schedule with day, time and route suffixed by a delete button. which on clicking will delete the corresponding flight schedule.\par
+\bullet TextField to input flight schedule in the order, day, time, route.\par
+\bullet Text field to input flight rate(number), the previous flight rate should be given as initial value of the textfield so that provider may know the previous flight rate.\par
+\bullet Image picker to pick image, the previous flight image should be shown on side of the picker so that provider may know the previous flight image.\par
+\bullet Number of seats(number), the previous number of seats should be given as initial value of the textfield so that provider may know the previousnumber of seats.\par
+\bullet Submit button that will validate new datas that are entered and update the data, if any error occur while updating data it will alert the user to enter the corresponding field.\f1\line\f2\par
+\par
+\par
+\f1\par
+\ul\par
+\ulnone\par
+\ul\fs32\par
+}
+ 

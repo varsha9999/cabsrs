@@ -1,0 +1,169 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Berlin Sans FB Demi;}{\f1\fnil\fcharset0 Bahnschrift SemiLight;}{\f2\fnil\fcharset0 Bahnschrift SemiBold;}{\f3\fnil\fcharset0 Bahnschrift Light;}{\f4\fnil\fcharset0 @Microsoft YaHei UI Light;}{\f5\fnil\fcharset0 Bahnschrift;}{\f6\fnil @Microsoft YaHei UI Light;}{\f7\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\li2880\sa200\sl276\slmult1\ul\b\f0\fs40\lang9 cab reservation\par
+
+\pard\sa200\sl276\slmult1\fs28 1.introduction\par
+1.1 Purpose of this document\par
+\ulnone\b0\par
+\f1 The purpose of this document is to present a detailed description of the cab booking system. It will explain the purpose and features of the system, the interfaces of the system, what the system will do, the constraints under which it must operate and how the system will react to external stimuli. This document is intended for both the stakeholders and the developers of the system.\par
+\ul\b\f2 1.2 Scope of this document\ulnone\b0\f1\par
+The major goal of this system is to meet the needs of its customers directly at their doorstep. The process of hailing a cab becomes much easier and convenient while booking a cab through this system. The driver is advised of the customer and their pickup location. When customers use open-ended services, they can read the invoice bill and booking details when they arrive at the drop-off site.\par
+\ul\b\f3\fs32 1.3 Overview\ulnone\b0\f1\fs28\par
+myCab is a growing Cab services management company. They wanted to digitalise their cab management services system. They operate cabs locally and for long distance travels. They have a variety of cab models to offer to the customers. It makes life much easier for :\par
+\par
+I. The traveller - this is highly important and in today's internet age people should be able to book taxis online without having to pick up the phone and\par
+\par
+II. The Cab driver - as all their bookings are now managed via an automated system\fs36\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi142\sa200\sl276\slmult1\ul\b\f0\fs28 Actors\ulnone\line\f3 1.user\line 2.admin\line 3.cab manager\par
+{\pntext\f0 2.\tab}\ul\f0 Functionalities\line\f3 1\ulnone .admin login\f0\line\f3 2.user login and registeration\ul\line\ulnone 3.user profile\line 4.finance login\line 5.cab owner login & registeration\line 6.search cab\line 7.book cab\line 8.add cab details\line 9.update cab details\par
+{\pntext\f0 3.\tab}\ul\f0 Requirments\par
+
+\pard\sa200\sl276\slmult1\f3\fs32 1.user login and register\fs28 :\ulnone\b0\f4\fs24 customer can register,login and logout from the page.And a button for navigating for fotrgott password page.And do search,book,pay,delete,update for the cab booking.\par
+\ul registration details:\ulnone\par
+\ul username \ulnone :must be less than 20 characters.username must not be empty.submit button should validate username.if username not matching alert user to change username ,else signin customer.\par
+ \ul Adress: \ulnone The primary address of the user. If this field is missing it shows an error message saying "This field is mandatory".\ul\par
+ Phone number: \ulnone Phone number of the user for the basic verification id. If this field is missing it shows an error message saying "This field is mandatory". Only numbers are allowed if any non-number is entered it shows an error message showing "Only numbers are allowed".\par
+\ul Email\ulnone : Email id of the user, if this field is missing it shows an error message saying "This field is mandatory". It must include an "@ "symbol and "."if it is missing shows a message that contain " only email can enter".\par
+\ul password: \ulnone must be atleast 8 characters with atleast one number,special character and characters.password must not be empty.submit button should validate password.if password not matching alert user to change password,else signin customer.\par
+submit button navigate user to the searching page.\par
+\par
+\f5\fs32 2.\ul admin login  :\ulnone\f3\fs28 Admin \f4\fs24 can login,logout from the system.And a button for navigating for fotrgott password page.admin can view the details and of the cab owners .And can also accept or reject request from customers,cab owners . Admin can update the cab details and managing the scheduling of different cabs. username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin admin.\par
+\ul username \ulnone :must be less than 20 characters.username must not be empty.submit button should validate username.if username not matching alert user to change username ,else signin customer.\par
+\ul password: \ulnone must be atleast 8 characters with atleast one number,special character and characters.password must not be empty.submit button should validate password.if password not matching alert user to change password,else signin customer.\par
+after login to the system admin can view the users and cab managers details,and can accept or reject the requests they sent.\par
+\par
+\ul\f5\fs32 3.cab manager login and registeration:  \ulnone\f4\fs24 cab masnager can register,login,logout with the valid username and password.And a button for navigating for fotrgott password page,And cab master can register the cab details,update and delete the details.And can also view the details of cab booked customers.And can manage refund and discount.username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+\ul registeration details:\ulnone\par
+\ul username \ulnone :must be less than 20 characters.username must not be empty.submit button should validate username.if username not matching alert user to change username ,else signin customer.\par
+\ul password: \ulnone must be atleast 8 characters with atleast one number,special character and characters.password must not be empty.submit button should validate password.if password not matching alert user to change password,else signin customer.\par
+\ul cab driver name:\ulnone must be less than 30 characters.submit button should validate cab driver name.\par
+\ul license id:\ulnone license id is mandatory and only numbers and alphabets are allowed\ul .\ulnone license id must not be empty.submit button should validate license id.if id is not matching alert message should be diplayed.\par
+\ul experience:\ulnone must be filled and experience must be more than 6 months.\par
+\ul cab name\ulnone :must be less than 30 characters.submit button should validate cab name.\par
+\ul cab image:\par
+\ulnone must be jpg or png .\par
+ within the limit of 50 mb\par
+\ul cab registeration number:\ulnone id is mandatory and only numbers and alphabets are allowed\ul .\ulnone  id must not be empty.submit button should validate id.if id is not matching alert message should be diplayed.\par
+\ul number of seats:\ulnone must be filled.\ul\fs32\line\ulnone\fs24\par
+\b\f3\fs32 5. \ul Search :\f2\fs24\par
+\ulnone\b0\f6\bullet Search bar for searching \f4\lang16393 cab\f6\lang9  on typing each letter it should show the \f4\lang16393 cab \f6\lang9 that matches the corresponding letter and on touching them it should search for the corresponding \f4\lang16393 cab\f6\lang9 .\par
+\bullet A clear icon button for clearing the search should appear only when atleast one letter is there.\par
+\bullet A search icon button that will take the text entered and search for the \f4\lang16393 cab \f6\lang9 that matches the text and should give the result as a list with preview information(image, name, route, time).If there is no match it should show, "No result found".\par
+\bullet On tapping a specific result, it should navigate to a new page where the user get detailed view of \f4\lang16393 cab\f6\lang9 (image, name, route, time, seat availablity, rate, offers if theres any, etc.). A booking button should be there on the bottom which will allow user to book the \f4\lang16393 cab\f6\lang9 . \par
+\f4\lang16393 6\ul .Book:\f6\lang9\par
+\ulnone\bullet A textfield for inputing user name as text\par
+\bullet A textfield for inputing user email id.\par
+\bullet It should show the information of \f4\lang16393 cab\f6\lang9\par
+\f4\lang16393 such \f6\lang9 as:\par
+a. \f4\lang16393 cab \f6\lang9 name\par
+b. \f4\lang16393 cab\f6\lang9  route\par
+c. \f4\lang16393 cab\f6\lang9  image\par
+d. \f4\lang16393 cab \f6\lang9 time\par
+\f4\lang16393 e.\f6\lang9  Rate\par
+\f4\lang16393 f\f6\lang9 . If there's offers then show it as well\par
+A payment button which on tapping will store the above information for temp and will navigate to payment page.\par
+\bullet A cancel button which will clear all the entered information and the allocated seat and navigate back to flight details page.\par
+\f4\lang16393 7.\ul Payment:\par
+\ulnone\f6\lang9 A text field for getting user debit/ credit card number, on entering the number it should automatically detect the card company, and if the number is wrong, it should show a error message.\par
+\bullet A text field for getting user debit/ credit card expiry as date format mm/yy, on entering the date it should automatically detect if the date is wrong or not,if it's wrong it should show a error message \f4\lang16393 .\par
+\f6\lang9\bullet A text field for getting user debit/ credit card cvc as number, on entering the date it should automatically detect if the cvc is wrong or not,if it's wrong it should show a error message \par
+A submit button which on pressed willcheck if all the informations are correct and if yes, it will make the payment and the user will get a preview of the invoice containing details like: username, user email, \f4\lang16393 cab \f6\lang9 name, \f4\lang16393 cab \f6\lang9 route, seat number, \f4\lang16393 cab\f6\lang9  time, amount, and the user can download it as pdf or can close the invoice which will navigate the user back to the \f4\lang16393 cab\f6\lang9  details page, else if the details are not correct it will show a error message like "Wrong credentials", or if there is any issue in payment it will show error message like "Payment failed try again"\par
+\par
+\f4\lang16393 8.\ul Add cab details:\ulnone\f6\lang9\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\f4 Text field to input cab name \par
+{\pntext\f7\'B7\tab}\f6 Text field to input \f4\lang16393 cab\f6\lang9  routes \par
+{\pntext\f7\'B7\tab}TextField to input \f4\lang16393 cab\f6\lang9  schedule in the order, Day, time, route\par
+{\pntext\f7\'B7\tab}.Text field to input \f4\lang16393 cab\f6\lang9  rate as input type number.\par
+{\pntext\f7\'B7\tab}Image picker to pick image.\par
+{\pntext\f7\'B7\tab}Number of seats(number).\par
+{\pntext\f7\'B7\tab}Submit button that will validate if all the datas are entered, if any data is missing it will alert the user to enter the corresponding field.\par
+
+\pard\sa200\sl276\slmult1\f4\lang16393 9.\ul Update cab details:\f6\lang9\par
+\ulnone Text field to input flight name should accept alphanumeric as input, the previous flight name should be given as initial value of the textfield so that provider may know the previous flight name.\par
+\bullet Text field to input flight number should accept alphanumericas input type, the previous flight number should be given as initial value of the textfield so that provider may know the previous flight number.\par
+\bullet Listview of previous flight routes suffixed by a delete button. which on clicking will delete the corresponding flight route.\par
+\bullet Text field to input flight routes(alphanumeric).\par
+\bullet Listview of previous flight schedule with day, time and route suffixed by a delete button. which on clicking will delete the corresponding flight schedule.\par
+\bullet TextField to input flight schedule in the order, day, time, route.\par
+\bullet Text field to input flight rate(number), the previous flight rate should be given as initial value of the textfield so that provider may know the previous flight rate.\par
+\bullet Image picker to pick image, the previous flight image should be shown on side of the picker so that provider may know the previous flight image.\par
+\bullet Number of seats(number), the previous number of seats should be given as initial value of the textfield so that provider may know the previousnumber of seats.\par
+\bullet Submit button that will validate new datas that are entered and update the data, if any error occur while updating data it will alert the user to enter the corresponding field.\ul\f5\fs32\par
+\b\f0 4.Testcases\par
+\ulnone\b0\f4\fs24 1.\ul Admin\ulnone  login to the system by valid username and password otherwise it will show error message \par
+check :\par
+username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin admin.\par
+2.\ul customer \ulnone must be register with the basic details such as first name,last name,phone number,passport id,gender,address login to the system by valid username and password otherwise it will show error message.\par
+check:\par
+username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+3.\ul provider\ulnone  must be register with the basic details such as username,password,company id, location,company name login to the system by valid username and password otherwise it will show error message.\par
+check:\par
+username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+4.\ul financial managers \ulnone must be register with the basic details such as username,password,company id, location,company name login to the system by valid username and password otherwise it will show error message.\par
+check:\par
+username must be less than 20 characters.password must be atleast 8 characters with atleast one number,special character and characters.password or username must not be empty.submit button should validate username and password.if username and password not matching alert user to change username and password,else signin customer.\par
+5.\ul serch\par
+\ulnone check:\ul\par
+\ulnone\f6\bullet Search bar for searching \f4\lang16393 cab \f6\lang9 on typing each letter it should show the \f4\lang16393 cabs\f6\lang9  that matches the corresponding letter and on touching them it should search for the corresponding \f4\lang16393 cab.\f6\lang9\par
+\bullet A clear icon button for clearing the search should appear only when atleast one letter is there.\par
+\bullet A search icon button that will take the text entered and search for the \f4\lang16393 cab\f6\lang9 s that matches the text and should give the result as a list with preview information(image, name, route, time).If there is no match it should show, "No result found".\par
+\bullet On tapping a specific result, it should navigate to a new page where the user get detailed view of \f4\lang16393 cab\f6\lang9 (image, name, route, time, seat availablity, rate, offers if theres any, etc.). A booking button should be there on the bottom which will allow user to book the \f4\lang16393 cab\f6\lang9 . \par
+\par
+\f4\lang16393 6\ul .Book\par
+\ulnone check:\ul\f6\lang9\par
+\ulnone\bullet A textfield for inputing user name as text\par
+\bullet A textfield for inputing user email id.\par
+\bullet It should show the information of \f4\lang16393 cab\f6\lang9\par
+\f4\lang16393 such \f6\lang9 as:\par
+a. \f4\lang16393 cab\f6\lang9  name\par
+b. \f4\lang16393 cab \f6\lang9 route\par
+c. \f4\lang16393 cab\f6\lang9  image\par
+d. \f4\lang16393 cab \f6\lang9 time\par
+\f4\lang16393 e.\f6\lang9  Rate\par
+\f4\lang16393 f.\f6\lang9  If there's offers then show it as well\par
+A payment button which on tapping will store the above information for temp and will navigate to payment page.\par
+\bullet A cancel button which will clear all the entered information and the allocated seat and navigate back to \f4\lang16393 cab\f6\lang9  details page.\par
+\par
+\f4\lang16393 7.\ul Payment:\par
+\ulnone check:\ul\par
+\ulnone\f6\lang9 A text field for getting user debit/ credit card number, on entering the number it should automatically detect the card company, and if the number is wrong, it should show a error message.\par
+\bullet A text field for getting user debit/ credit card expiry as date format mm/yy, on entering the date it should automatically detect if the date is wrong or not,if it's wrong it should show a error message \f4\lang16393 .\par
+\f6\lang9\bullet A text field for getting user debit/ credit card cvc as number, on entering the date it should automatically detect if the cvc is wrong or not,if it's wrong it should show a error message \par
+A submit button which on pressed willcheck if all the informations are correct and if yes, it will make the payment and the user will get a preview of the invoice containing details like: username, user email, \f4\lang16393 cab \f6\lang9 name, \f4\lang16393 cab\f6\lang9  route, \f4\lang16393 cab \f6\lang9 time, amount, and the user can download it as pdf or can close the invoice which will navigate the user back to the \f4\lang16393 cab\f6\lang9  details page, else if the details are not correct it will show a error message like "Wrong credentials", or if there is any issue in payment it will show error message like "Payment failed try again"\par
+\f4\lang16393 8.\ul Add cab details:\par
+\ulnone check:\f6\lang9\par
+\f4 Text field to input cab name should accept alphanumeric.\par
+\f6\bullet Text field to input \f4\lang16393 cab\f6\lang9  number should alphanumeric.\par
+\bullet Text field to input \f4\lang16393 cab\f6\lang9  routes sh\f4\lang16393 o\f6\lang9 uld alphanumeric.\par
+\bullet TextField to input \f4\lang16393 cab\f6\lang9  schedule in the order, Day, time, route\par
+.\bullet Text field to input \f4\lang16393 cab\f6\lang9  rate as input type number.\par
+\bullet Image picker to pick image.\par
+\bullet Submit button that will validate if all the datas are entered, if any data is missing it will alert the user to enter the corresponding field.\f4\lang16393\par
+\f6\lang9\par
+\f4\lang16393 9.\ul Update\par
+\ulnone check:\ul\f6\lang9\par
+\ulnone Text field to input\f4\lang16393  cab\f6\lang9  name should accept alphanumeric as input, the previous \f4\lang16393 cab \f6\lang9 name should be given as initial value of the textfield so that provider may know the previous \f4\lang16393 cab\f6\lang9  name\f4\lang16393 .\f6\lang9\par
+\bullet Text field to input \f4\lang16393 cab\f6\lang9  routes\f4\lang16393 .\f6\lang9\par
+\bullet Listview of previous \f4\lang16393 cab \f6\lang9 schedule with day, time and route suffixed by a delete button. which on clicking will delete the corresponding \f4\lang16393 cab\f6\lang9  schedule.\par
+\bullet TextField to input \f4\lang16393 cab \f6\lang9 schedule in the order, day, time, route.\par
+\bullet Text field to input \f4\lang16393 cab\f6\lang9  rate(number), the previous \f4\lang16393 cab \f6\lang9 rate should be given as initial value of the textfield so that provider may know the previous \f4\lang16393 cab \f6\lang9 rate.\par
+\bullet Image picker to pick image, the previous \f4\lang16393 cab\f6\lang9  image should be shown on side of the picker so that provider may know the previous \f4\lang16393 cab \f6\lang9 image.\par
+\bullet Submit button that will validate new datas that are entered and update the data, if any error occur while updating data it will alert the user to enter the corresponding field.\f4\line\f6\par
+\par
+\par
+\f4\par
+\ul\par
+\ulnone\par
+\ul\fs32\par
+\ulnone\f0\fs28\par
+\f4\fs32\par
+\line\fs24\par
+\fs32\line\fs24\par
+\ul\b\f3\fs28\par
+\f0\par
+}
+ 
